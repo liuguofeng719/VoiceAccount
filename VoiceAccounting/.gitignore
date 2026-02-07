@@ -1,0 +1,17 @@
+.DS_Store
+
+# Codex artifacts
+.codex/
+findings.md
+progress.md
+task_plan.md
+verification.md
+
+# Environment files
+.env
+.env.*
+
+# Logs & temp
+*.log
+*.tmp
+*.swp
