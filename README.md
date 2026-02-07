@@ -11,7 +11,6 @@
 - `VoiceAccount/`：iOS 客户端工程
 - `VoiceServer/`：FastAPI 服务
 - `VoiceAccounting/`：原型与设计文档
-- `docs/`：项目计划与说明
 
 ## 部署流程
 
@@ -57,6 +56,22 @@
 2. 开始录制 → 结束录制自动上传
 3. AI 解析完成后弹窗显示条目
 4. 用户编辑金额/标题/分类/时间并确认保存到本地
+
+## 关键截图
+按文件创建时间从早到晚排列：
+
+1. image
+   ![image](README.assets/image.png)
+2. image copy
+   ![image copy](README.assets/image%20copy.png)
+3. image copy 2
+   ![image copy 2](README.assets/image%20copy%202.png)
+4. image copy 3
+   ![image copy 3](README.assets/image%20copy%203.png)
+5. image copy 4
+   ![image copy 4](README.assets/image%20copy%204.png)
+6. image copy 5
+   ![image copy 5](README.assets/image%20copy%205.png)
 
 ## 常见问题
 - 解析失败：检查 `DASHSCOPE_API_KEY` 与网络访问是否正常
