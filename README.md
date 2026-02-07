@@ -60,18 +60,18 @@
 ## 关键截图
 按文件创建时间从早到晚排列：
 
-1. image
-   ![image](README.assets/image.png)
-2. image copy
-   ![image copy](README.assets/image%20copy.png)
-3. image copy 2
-   ![image copy 2](README.assets/image%20copy%202.png)
-4. image copy 3
-   ![image copy 3](README.assets/image%20copy%203.png)
-5. image copy 4
-   ![image copy 4](README.assets/image%20copy%204.png)
-6. image copy 5
-   ![image copy 5](README.assets/image%20copy%205.png)
+1. image  
+   <img src="README.assets/image.png" width="200" height="200" />
+2. image copy  
+   <img src="README.assets/image%20copy.png" width="200" height="200" />
+3. image copy 2  
+   <img src="README.assets/image%20copy%202.png" width="200" height="200" />
+4. image copy 3  
+   <img src="README.assets/image%20copy%203.png" width="200" height="200" />
+5. image copy 4  
+   <img src="README.assets/image%20copy%204.png" width="200" height="200" />
+6. image copy 5  
+   <img src="README.assets/image%20copy%205.png" width="200" height="200" />
 
 ## 常见问题
 - 解析失败：检查 `DASHSCOPE_API_KEY` 与网络访问是否正常
