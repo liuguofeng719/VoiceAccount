@@ -1,0 +1,28 @@
+.DS_Store
+
+# Codex artifacts
+.codex/
+findings.md
+progress.md
+task_plan.md
+verification.md
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment files
+.env
+.env.*
+
+# Xcode / Swift
+DerivedData/
+*.xcuserdatad/
+*.xcuserdata/
+build/
+
+# Logs & temp
+*.log
+*.tmp
+*.swp

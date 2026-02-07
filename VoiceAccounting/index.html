@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VoiceAccounting 原型总览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-100 text-slate-900">
+    <main class="mx-auto max-w-[1200px] px-6 py-10">
+      <header class="space-y-3">
+        <p class="text-sm uppercase tracking-[0.2em] text-slate-500">iOS Prototype</p>
+        <h1 class="text-3xl font-semibold">VoiceAccounting 原型总览</h1>
+        <p class="max-w-2xl text-sm text-slate-600">
+          所有页面以 iPhone 15 Pro 规格展示（393 × 852 pt），通过 iframe 平铺展示，
+          各页面文件独立维护。
+        </p>
+      </header>
+
+      <section class="mt-8 grid gap-8 lg:grid-cols-2">
+        <div data-device="iphone-15-pro" class="space-y-3">
+          <h2 class="text-lg font-semibold">记账</h2>
+          <div class="rounded-3xl border border-slate-200 bg-white shadow-xl">
+            <iframe
+              title="记账页面"
+              src="accounting.html"
+              class="h-[980px] w-[430px]"
+            ></iframe>
+          </div>
+        </div>
+
+        <div data-device="iphone-15-pro" class="space-y-3">
+          <h2 class="text-lg font-semibold">统计</h2>
+          <div class="rounded-3xl border border-slate-200 bg-white shadow-xl">
+            <iframe
+              title="统计页面"
+              src="stats.html"
+              class="h-[980px] w-[430px]"
+            ></iframe>
+          </div>
+        </div>
+
+        <div data-device="iphone-15-pro" class="space-y-3">
+          <h2 class="text-lg font-semibold">历史</h2>
+          <div class="rounded-3xl border border-slate-200 bg-white shadow-xl">
+            <iframe
+              title="历史页面"
+              src="history.html"
+              class="h-[980px] w-[430px]"
+            ></iframe>
+          </div>
+        </div>
+
+        <div data-device="iphone-15-pro" class="space-y-3">
+          <h2 class="text-lg font-semibold">设置</h2>
+          <div class="rounded-3xl border border-slate-200 bg-white shadow-xl">
+            <iframe
+              title="设置页面"
+              src="settings.html"
+              class="h-[980px] w-[430px]"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

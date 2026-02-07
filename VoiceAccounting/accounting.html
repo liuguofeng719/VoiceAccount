@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>记账 - VoiceAccounting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-100 text-slate-900">
+    <div class="min-h-screen w-full items-center justify-center p-8 md:flex">
+      <div
+        data-device="iphone-15-pro"
+        class="relative h-[852px] w-[393px] overflow-hidden rounded-[48px] border border-slate-200 bg-white shadow-2xl"
+      >
+        <div class="absolute top-4 left-0 right-0 flex items-center justify-center text-[11px] text-slate-500">
+          9:41
+        </div>
+        <div class="absolute bottom-3 left-1/2 h-1.5 w-24 -translate-x-1/2 rounded-full bg-slate-300"></div>
+
+        <div class="relative flex h-full flex-col">
+          <header class="px-6 pt-12 pb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">记账</p>
+                <h1 class="text-2xl font-semibold">本月支出</h1>
+              </div>
+              <div class="h-10 w-10 overflow-hidden rounded-full border border-slate-200">
+                <img
+                  src="https://images.unsplash.com/photo-1762831063004-bbd3ea38ba3a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=60&w=200"
+                  alt="记账封面图"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="mt-4 rounded-2xl bg-slate-900 px-4 py-5 text-white">
+              <p class="text-xs uppercase tracking-[0.2em] text-slate-300">2026 年 2 月</p>
+              <div class="mt-2 flex items-end justify-between">
+                <p class="text-3xl font-semibold">¥ 3,460.80</p>
+                <span class="text-xs text-slate-300">预算 ¥ 6,000</span>
+              </div>
+            </div>
+          </header>
+
+          <main class="flex-1 overflow-y-auto px-6 pb-32">
+            <section class="grid grid-cols-2 gap-3">
+              <button
+                class="flex flex-col items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-3 py-4 text-sm font-medium text-slate-800 shadow-sm"
+              >
+                <i class="fa-solid fa-microphone text-lg text-indigo-600"></i>
+                语音输入
+                <span class="text-xs text-slate-400">长按开始录音</span>
+              </button>
+              <button
+                class="flex flex-col items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-3 py-4 text-sm font-medium text-white shadow-sm"
+              >
+                <i class="fa-solid fa-pen text-lg"></i>
+                手动输入
+                <span class="text-xs text-indigo-100">点击录入</span>
+              </button>
+            </section>
+
+            <section class="mt-6">
+              <div class="flex items-center justify-between">
+                <h2 class="text-base font-semibold">今日记录</h2>
+                <span class="text-xs text-slate-400">2026-02-07</span>
+              </div>
+              <div class="mt-3 space-y-3">
+                <div class="flex items-center justify-between rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                      <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium">午餐</p>
+                      <p class="text-xs text-slate-400">餐饮 · 12:30</p>
+                    </div>
+                  </div>
+                  <p class="text-sm font-semibold">- ¥ 38.00</p>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-600">
+                      <i class="fa-solid fa-train-subway"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium">地铁</p>
+                      <p class="text-xs text-slate-400">交通 · 09:05</p>
+                    </div>
+                  </div>
+                  <p class="text-sm font-semibold">- ¥ 6.00</p>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-100 bg-slate-50 px-4 py-3">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+                      <i class="fa-solid fa-mug-saucer"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium">咖啡</p>
+                      <p class="text-xs text-slate-400">饮品 · 08:10</p>
+                    </div>
+                  </div>
+                  <p class="text-sm font-semibold">- ¥ 24.00</p>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <nav class="absolute bottom-0 left-0 right-0 border-t border-slate-200 bg-white/95 px-6 pb-6 pt-3 backdrop-blur">
+            <div class="flex items-center justify-between text-xs">
+              <div class="flex flex-col items-center gap-1 text-indigo-600">
+                <i class="fa-solid fa-wallet text-base"></i>
+                记账
+              </div>
+              <div class="flex flex-col items-center gap-1 text-slate-400">
+                <i class="fa-solid fa-chart-column text-base"></i>
+                统计
+              </div>
+              <div class="flex flex-col items-center gap-1 text-slate-400">
+                <i class="fa-regular fa-clock text-base"></i>
+                历史
+              </div>
+              <div class="flex flex-col items-center gap-1 text-slate-400">
+                <i class="fa-solid fa-gear text-base"></i>
+                设置
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="absolute inset-0 flex items-end bg-black/40 p-4">
+          <div class="w-full rounded-3xl bg-white px-5 py-4 shadow-xl">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">手动输入</p>
+                <h3 class="text-lg font-semibold">新增记录</h3>
+              </div>
+              <button class="h-8 w-8 rounded-full bg-slate-100 text-slate-500">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="mt-4 space-y-3 text-sm">
+              <label class="block">
+                <span class="text-xs text-slate-500">金额</span>
+                <input
+                  class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+                  placeholder="¥ 0.00"
+                />
+              </label>
+              <label class="block">
+                <span class="text-xs text-slate-500">标题</span>
+                <input
+                  class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+                  placeholder="例如：晚餐"
+                />
+              </label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="block">
+                  <span class="text-xs text-slate-500">时间</span>
+                  <input
+                    class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+                    value="2026-02-07 09:30"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-xs text-slate-500">分类</span>
+                  <div class="mt-1 flex items-center justify-between rounded-xl border border-slate-200 px-3 py-2">
+                    <span>餐饮</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                  </div>
+                </label>
+              </div>
+              <button class="mt-2 w-full rounded-xl bg-indigo-600 py-2 text-sm font-semibold text-white">
+                保存记录
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
