@@ -7,6 +7,9 @@ progress.md
 task_plan.md
 verification.md
 
+# Docs (removed from repo)
+docs/
+
 # Python caches
 __pycache__/
 *.py[cod]
@@ -26,3 +29,4 @@ build/
 *.log
 *.tmp
 *.swp
+docs/
